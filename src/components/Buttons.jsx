@@ -8,13 +8,9 @@ const Buttons = ({ filterByType, setSat, orbitTypes }) => {
           <button onClick={() => filterByType(type)} key={index}>{type} Orbit</button>
         );
       })}
-      <button onClick={setSat}>All Orbits</button>
+      <button onClick={() => setSat(satData)}>All Orbits</button>
     </div>
-    // return (
-    //   <div>
-    //   </div>
-    // );
-  )
+  );
 };
 
 export default Buttons;
